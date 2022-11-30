@@ -33,7 +33,7 @@ const Contact = () => {
     <div className="contact-form" id="contact">
     {/* left side copy and paste from work section */}
     <div className="w-left">
-      <div className="awesome">
+      <div classNamme="awesome">
         {/* darkMode */}
         <span >Get in Touch</span>
         <span>Contact me</span>
