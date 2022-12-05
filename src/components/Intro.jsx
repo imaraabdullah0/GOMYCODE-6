@@ -1,4 +1,4 @@
-import React from 'react';
+import React ,{useContext}from 'react';
 import './Intro.css';
 import Github from '../img/github.png';
 import Instagram from '../img/instagram.png';
@@ -10,6 +10,8 @@ import thumbup from '../img/thumbup.png';
 import Crown from '../img/crown.png';
 import glassesimoji from '../img/glassesimoji.png';
 import FloatingDiv from './FloatingDiv';
+import { themeContext } from '../Context';
+
 
 
 
@@ -17,11 +19,13 @@ import FloatingDiv from './FloatingDiv';
 
 
 const Intro = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <div className='Intro'>
         <div className='i-left'>
             <div className='i-name'>
-                <span>hey! I Am</span>
+                <span style={{ color: darkMode ? "white" : "" }}>hey! I Am</span>
                 <span>Abdullah Imara</span>
                 <span>Frontend Developer with high level of experience in web designing
             and development, producting the Quality work</span>

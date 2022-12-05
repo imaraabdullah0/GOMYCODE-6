@@ -33,6 +33,7 @@
     display: flex;
     gap: 2rem;
     margin-right: 4rem;
+    list-style: none;
   }
   
   .n-list > ul :hover {

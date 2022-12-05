@@ -15,14 +15,12 @@ function App() {
   const theme= useContext(themeContext);
   const darkMode=theme.state.darkMode;
   return (
-    <div className="App">
-         <div
-      className="App"
+    <div className="App"
       style={{
         background: darkMode ? "black" : "",
         color: darkMode ? "white" : "",
-      }}
-         ></div>
+      }}>
+         
       <Navbar />
       <Intro />
       <Services />

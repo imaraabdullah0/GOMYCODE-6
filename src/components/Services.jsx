@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import './Services.css';
 import glasses from '../img/glasses.png';
 import heartemoji from '../img/heartemoji.png';
@@ -6,6 +6,8 @@ import humble from '../img/humble.png';
 import res from '../img/res.png';
 import Card from './Card';
 import { motion ,} from "framer-motion";
+import { themeContext } from '../Context';
+
 
 
   // transition
@@ -16,11 +18,13 @@ import { motion ,} from "framer-motion";
 
 
 const Services = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <div className='all'>
     <div className='services' id="services">
         <div className='awesome'>
-          <span>My Awesome</span>
+          <span  style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
           <span>Services</span>
           <spane>
           Lorem ispum is simpley dummy text of printing of printing Lorem
